@@ -32,7 +32,7 @@ public class WindowHandling  {
         //Merge Contacts
         driver.findElement(By.linkText("Merge Contacts")).click();
 
-        // widget of the "From Contact"
+        // From Contact
         driver.findElement(By.xpath("(//img[@alt='Lookup'])[1]")).click();
         
         // Switch to new window
