@@ -18,16 +18,16 @@ public class IRCTCWindowHandling {
             // Maximize the browser window
             driver.manage().window().maximize();
             
-            // Add an implicit wait (optional, adjust as needed)
+            // Add an implicit wait
             driver.manage().timeouts().implicitlyWait(java.time.Duration.ofSeconds(10));
             
             // Click on the "FLIGHTS" link
             driver.findElement(By.xpath("//a[contains(text(), 'FLIGHTS')]")).click();
             
-            // Store parent window handle
+            // parent window handle
             String parentWindow = driver.getWindowHandle();
             
-            // Get all window handles
+            // All window handles
             Set<String> allWindows = driver.getWindowHandles();
             
             // Switch to the flights window
